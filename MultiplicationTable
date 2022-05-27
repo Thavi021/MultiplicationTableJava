@@ -1,0 +1,34 @@
+ /*
+Using For Loop 2
+19/03/2019
+@Thavi021
+Doing the timetables using nested loops (eg printing a tree using astricks)
+ */
+package causingforloop2;
+
+public class CaUsingForLoop2 {
+
+    public static void main(String[] args) {
+        
+        int intNumber, intCount;
+       
+        /*
+        intNumber = 13;
+        
+        for (intCount = 1;  intCount <= 12; intCount++)
+        {
+            System.out.println(intNumber + "*" + intCount + "=" + (intNumber * intCount));
+        }*/
+        
+        for (intNumber =1; intNumber <= 12; intNumber++)
+        {
+            for (intCount = 1;  intCount <= 12; intCount++)
+           {
+                System.out.println(intNumber + "*" + intCount + "=" + (intNumber * intCount));  
+// this line was executed 144 times but the outside loop only executed 1 times in its full cycle 
+            }
+        }
+    
+    }
+    
+}
